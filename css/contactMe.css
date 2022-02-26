@@ -115,12 +115,14 @@ nav {
         right: 0px;
         height: 100%;
         top: 12vh;
+        bottom: 12vh;
         background-color: rgb(65, 65, 65);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
+        padding-bottom: 200px;
     }
     .Nav-Links li {
         opacity: 0;
@@ -295,5 +297,16 @@ h2 {
     .footer .social i {
         font-size: 40px;
         margin: 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer .social i {
+        font-size: 35px;
+        padding-left: 0;
+        margin: 100 100;
+    }
+    .footer .social a {
+        margin: 0 15px;
     }
 }
