@@ -128,6 +128,7 @@ nav {
     body {
         overflow-x: hidden;
         position: relative;
+        overflow-y: hidden;
     }
     .info {
         margin-top: 100%;
@@ -135,7 +136,15 @@ nav {
     .Main-Panel h1 {
         font-size: 30px;
     }
+    .footer .social a {
+        font-size: 50px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
+
+@media screen and (max-width: 400px) {}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -186,150 +195,6 @@ h2 {
 }
 
 
-/*for the education section*/
-
-.Education,
-.Work_Experience,
-.Skills,
-.Interests,
-.Languages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.Box,
-.Experience,
-.Interest {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 350px;
-    border-radius: 4px;
-    background-color: #202020;
-    text-align: center;
-    margin: 20px;
-    transition: 0.3s;
-    border: 1px solid #fff;
-    border-radius: 14px;
-    outline: none;
-    color: white;
-}
-
-.Skill {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 300;
-    border-radius: 4px;
-    background-color: #202020;
-    text-align: center;
-    margin: 20px;
-    transition: 0.3s;
-    border: 1px solid #fff;
-    border-radius: 14px;
-    outline: none;
-    color: white;
-}
-
-.Language {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 350px;
-    border-radius: 4px;
-    background-color: #202020;
-    text-align: center;
-    margin: 20px;
-    transition: 0.3s;
-    border: 1px solid #fff;
-    border-radius: 14px;
-    outline: none;
-    color: white;
-}
-
-.ImageArea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    padding: 20px;
-    background-size: cover;
-    background-position: center center;
-}
-
-.Language:nth-child(1) .ImageArea {
-    background-image: url(../images/chash.png);
-}
-
-.Language:nth-child(2) .ImageArea {
-    background-image: url(../images/Java.png);
-}
-
-.Language:nth-child(3) .ImageArea {
-    background-image: url(../images/html.png);
-}
-
-.headerText {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 48px;
-    color: white;
-}
-
-.ImageText {
-    font-family: 'Acme', sans-serif;
-    padding-top: 20px;
-    color: white;
-}
-
-.ImageText p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: white;
-}
-
-.Box:hover,
-.Experience:hover,
-.Skill:hover,
-.Interest:hover,
-.Language:hover {
-    background-color: #565656;
-    box-shadow: 0 0 25px 0 #fff;
-}
-
-.image {
-    display: block;
-    padding-bottom: 150px;
-}
-
-.image img {
-    width: 500px;
-    height: auto;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border: 5px solid white;
-}
-
-
 /* This is for the Footer*/
 
 .footer {
@@ -337,7 +202,12 @@ h2 {
     background-color: #202020;
     bottom: 0;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
 }
 
 .footer .social {
@@ -369,4 +239,11 @@ h2 {
     font-size: 20px;
     font-weight: normal;
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .footer .social i {
+        font-size: 40px;
+        margin: 0 0;
+    }
 }

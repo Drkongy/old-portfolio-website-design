@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,8 +14,8 @@ body {
     font-weight: bold;
     font: optional;
     transition: 2s ease;
-    border: relative;
     overflow-x: hidden;
+    border: relative;
 }
 
 
@@ -31,6 +31,7 @@ nav {
     font-weight: bold;
     font: optional;
     padding: 5px;
+    top: 0;
 }
 
 .Logo h4 {
@@ -72,9 +73,39 @@ nav {
     transition: all 0.3s ease;
 }
 
+.info {
+    margin-top: 50%;
+}
+
+
+/* This is for the Main Center Stuff*/
+
+.Main-Panel {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Main-Panel h1 {
+    text-align: center;
+    font-weight: Bold;
+    font-size: 40px;
+    color: white;
+}
+
+.Main-Panel .myInfo {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
 @media screen and (max-width: 800px) {
     .Logo h4 {
         position: center;
+        font-size: 200%;
     }
     .burger {
         display: block;
@@ -98,6 +129,30 @@ nav {
         overflow-x: hidden;
         position: relative;
     }
+    .info {
+        margin-top: 100%;
+    }
+    .Main-Panel h1 {
+        font-size: 30px;
+    }
+    .footer .social a {
+        font-size: 50px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #1c2266;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #202a97;
+    border-radius: 2em;
 }
 
 .nav-active {
@@ -116,16 +171,6 @@ nav {
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    background: #1c2376;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #202a97;
-    border-radius: 2em;
-}
-
 .toggle .Line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
@@ -139,11 +184,13 @@ nav {
 }
 
 
-/* This is for the Main Center Stuff*/
+/* This is for the text cr*/
 
-main {
-    width: 90vh;
+h2 {
+    font-family: 'Acme', sans-serif;
     color: white;
+    text-align: center;
+    font-size: 50px;
 }
 
 h1 {
@@ -152,6 +199,9 @@ h1 {
     font-size: 40px;
     color: white;
 }
+
+
+/* this is for the projects */
 
 .Projects {
     display: flex;
@@ -236,6 +286,10 @@ h1 {
     background-color: #202a97;
 }
 
+.padder {
+    padding-top: 200px;
+}
+
 
 /* This is for the Footer*/
 
@@ -277,4 +331,11 @@ h1 {
     font-size: 20px;
     font-weight: normal;
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .footer .social i {
+        font-size: 40px;
+        margin: 0 0;
+    }
 }

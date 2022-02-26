@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -18,11 +19,14 @@
             background-image: url('Images/grayPolygon.png');
         }
     </style>
+
+
+
     <header class="main-header" id="header" style="z-index:2;">
-        <!-- this is for the navigation links, it is all responsive. -->
+        <!-- main navigation links which are resposnvie and allows the user to go around all the site pages -->
         <nav>
             <div class="Logo">
-                <h4>Zeeshan's Portfolio</h4>
+                <h4>Kongolian</h4>
             </div>
 
             <ul class="Nav-Links" style="z-index: 2;">
@@ -46,58 +50,78 @@
 
 
 
+    <!-- test -->
 
 
+    <!-- small infomaiton about me -->
+    <main class="Main-Panel">
+    </main>
 
-    <h1> projects </h1>
-    <!-- gone for a minimalisic and clean design. -->
-    <!-- using flex boxes as it makes it look cleaner and  it make sure that the page is responsive. -->
+    <h1>Projects</h1>
+
     <div class="Projects">
-        <div class="Project">
-            <div class="ImageArea"></div>
 
-            <a href="https://github.com/Drkongy">
-                <div class="ImageText">
-                    <span class="header0text"><strong>Banana Clicker</strong></span>
-                    <p>A Cool Game About Clicking On Bananas And Hiring Monkeys To Do All The Dirty Work.</p>
-                </div>
-            </a>
 
-        </div>
 
-        <div class="Project">
-            <div class="ImageArea"></div>
-            <a href="https://github.com/Drkongy">
+        <a href="https://github.com/Drkongy/drkongy.github.io">
+            <div class="Project">
+                <div class="ImageArea" style="background-image: url('Images/Icon4.png');"></div>
 
                 <div class="ImageText">
-                    <span class="headerText"><strong>Portfolio Website</strong></span>
-                    <p>A Small Website That Shows All Of My Projects And Some Infomation About Me.</p>
+                    <span class="header0text"><strong>Website</strong></span>
+                    <p>This current website you're on. Made it to display all my projects.</p>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
 
-        <div class="Project">
-            <div class="ImageArea"></div>
-            <a href="https://github.com/Drkongy">
+        <a href="https://github.com/Drkongy/BananaClickerMobile">
+            <div class="Project">
+                <div class="ImageArea" style="background-image: url('Images/Icon2.png');"></div>
 
                 <div class="ImageText">
-                    <span class="header0text"><strong>Discord Bot</strong></span>
-                    <p>A Cool Discord Bot That Has It's Own Economy And Music Bot.</p>
+                    <span class="header0text"><strong>BananaClickerMobile</strong></span>
+                    <p>A mobile Idle/Incremental game that i've been working on. Worked on it using c# and Unity Engine.</p>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/Drkongy/KongolianOS">
+            <div class="Project">
+                <div class="ImageArea" style="background-image: url('Images/Icon8.png');"></div>
+
+                <div class="ImageText">
+                    <span class="header0text"><strong>KongolianOS</strong></span>
+                    <p>A small OS program I made when I was 15. Used c# and the .net framework to create it. One of my biggest projects.</p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="https://github.com/Drkongy/AutoClicker">
+            <div class="Project">
+                <div class="ImageArea" style="background-image: url('Images/Icon6.png');"></div>
+
+                <div class="ImageText">
+                    <span class="header0text"><strong>AutoClicker</strong></span>
+                    <p>A small AutoClicker program I made in 2 days, It has keybinds and duel mouse clicks.</p>
+                </div>
+            </div>
+        </a>
+
+
+
+
+
+
 
     </div>
 
-
-    <div class="im">
-        <img src="Images/test.jpg" alt="Code">
-
-    </div>
+    <div class="padder"></div>
 
 
 
-    <!-- cool footer that links to different profile pages of mine. -->
+
+    <!-- cool footer that has icons that links to different pages of mine -->
 
     <section class="footer" style="z-index: 1;">
         <div class="social">
@@ -115,12 +139,6 @@
         </p>
 
     </section>
-
-
-
-
-
-
     <script src="js/Nav.js"></script>
 
 </body>

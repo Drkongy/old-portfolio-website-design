@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -13,19 +14,21 @@
 </head>
 
 <body>
-
     <style>
         body {
             background-image: url('Images/grayPolygon.png');
         }
     </style>
-    <header class="main-header" id="header" style="z-index:2;">
 
+
+
+    <header class="main-header" id="header" style="z-index:2;">
+        <!-- main navigation links which are resposnvie and allows the user to go around all the site pages -->
         <nav>
             <div class="Logo">
-                <h4>Zeeshan's Portfolio</h4>
+                <h4>Kongolian</h4>
             </div>
-            <!-- navigation links -->
+
             <ul class="Nav-Links" style="z-index: 2;">
                 <li>
                     <a href="index.html">Home</a>
@@ -37,7 +40,6 @@
                     <a href="Contact_me.html">Contact Me</a>
                 </li>
             </ul>
-            <!-- burger menu -->
             <div class="burger" id="burger" style="z-index: 2">
                 <div class="Line1"></div>
                 <div class="Line2"></div>
@@ -47,82 +49,34 @@
     </header>
 
 
+
+    <!-- test -->
+
+
+    <!-- small infomaiton about me -->
+    <main class="Main-Panel">
+
+
+    </main>
+
     <div class="Infomation">
         <div class="Box1">
             <div class="ImageText">
                 <span class="headerText"><strong>Contact Infomation!</strong></span>
                 <em> 
                     <!-- opens up a mailing service -->
-                    <br> Zeeshan <br> <a href="mailto:Example@Email.com">Example@Email.com</a><br> 0121 000 0000
+                    <br> Zeeshan <br> <a href="mailto:Zeeshan@Kongolian.tech">Zeeshan@Kongolian.tech</a><br> 
+                    <a href="https://discord.gg/cYCsDfyPAv">My Discord!</a>
                 </em>
             </div>
-        </div>
-
-        <!-- the contact me section  -->
-        <div class="contactMe">
-            <div class="Box2">
-                <div class="">
-
-
-
-
-                    <form id="form" method="GET" class="contact-me">
-                        <span class="headerText"><strong>Contact Infomation!</strong></span>
-                        <input type="text" class="input-field" placeholder="First Name" id="firstName" required>
-                        <input type="text" class="input-field" placeholder="Last Name" id="lastName" required>
-                        <input type="email" class="input-field" placeholder="Email" id="email" required>
-                        <input type="email" class="input-field" placeholder="Confirm Email" id="Cemail" required>
-                        <input type="text" class="input-field" placeholder="Phone Number" id="Phone" required>
-
-                        <p>Preferred Contact Method:</p>
-                        <input type="radio" name="custom_type" value="Phone" required> Phone
-                        <input type="radio" name="custom_type" value="Email" id="custom_venuetype_private" required>Email
-                        <!-- allows the user to input an enquiry  -->
-
-                        <h4>Please Enter Project Enquiry Date:</h4>
-                        <input type="date" class="input-field" id="date" required>
-                        <textarea class="input-field query" placeholder id="query" required></textarea>
-                        <p id="error" class="error">🦍</p>
-                        <button type="submit" class="submit" id="submit">Submit</button>
-
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="hideme">
-            <div class="Box3">
-                <div class="End">
-                    <!-- this is for when you press the submit button and all of the validations have gone through -->
-                    <div class="ImageText">
-                        <span class="headerText"><strong>Confirmation!</strong></span>
-                        <h4 id="1">Name: </h4>
-                        <h4 id="2">Email: </h4>
-                        <h4 id="3">Phone: </h4>
-                        <h4 id="4">Contact Method: </h4>
-                        <h4 id="5">Date: </h4>
-                        <p id="6">query: </p>
-                        <button type="button" class="button" id="button">Send Query</button>
-                        <h3 id="7"></h3>
-
-                    </div>
-                </div>
-            </div>
-
-
         </div>
 
     </div>
 
 
 
+    <!-- cool footer that has icons that links to different pages of mine -->
 
-
-
-
-    <!-- footer contains icons that lead to different pages of mine -->
     <section class="footer" style="z-index: 1;">
         <div class="social">
             <a href="https://github.com/Drkongy"><i class="fab fa-github"></i></a>
@@ -139,15 +93,7 @@
         </p>
 
     </section>
-
-
-
-
-
-    <!-- connects the scripts to the page -->
     <script src="js/Nav.js"></script>
-    <script defer src="js/Contact.js"></script>
-
 
 </body>
 
