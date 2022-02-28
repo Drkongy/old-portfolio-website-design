@@ -202,6 +202,13 @@ h1 {
 }
 
 
+/* removes all the underlines from all of the refs */
+
+a {
+    text-decoration: none;
+}
+
+
 /* this is for the projects */
 
 .Projects {
@@ -210,6 +217,7 @@ h1 {
     justify-content: center;
     align-items: center;
     top: 50%;
+    text-decoration: none;
 }
 
 .im img {
@@ -234,6 +242,7 @@ h1 {
     border-radius: 14px;
     outline: none;
     color: white;
+    text-decoration: none;
 }
 
 .ImageArea {
@@ -262,17 +271,19 @@ h1 {
     background-image: url(../images/Icon3.png);
 }
 
-.headerText {
+.header0text {
     font-size: 24px;
     font-weight: 500;
     line-height: 48px;
     color: white;
+    text-decoration: none;
 }
 
 .ImageText {
     font-family: 'Acme', sans-serif;
     padding-top: 20px;
     color: white;
+    text-decoration: none;
 }
 
 .ImageText p {
@@ -280,6 +291,17 @@ h1 {
     font-weight: 400;
     line-height: 30px;
     color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.Download {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: royalblue;
 }
 
 .Project:hover {
