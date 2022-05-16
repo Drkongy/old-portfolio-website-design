@@ -77,6 +77,40 @@
 
     </div>
 
+    <!-- make a flex box that shows the uptime of the website -->
+    <div class="uptime">
+        <div class="Box2">
+            <div class="ImageText">
+                <span class="headerText"><strong>Uptime!</strong></span>
+                <em>
+                    <br>
+                    <label id="UptimeL"></label>                    
+                    <!-- on website load -->
+                    <script>
+                        setInterval(function() {
+                            var d = new Date();
+                            var days = d.getDay();
+                            var hours = d.getHours();
+                            var minutes = d.getMinutes();
+                            var seconds = d.getSeconds();
+
+                            // only show the days, hours, minutes if they are greater than 0 
+                            if (days > 0) {
+                                document.getElementById("UptimeL").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
+                            } else if (hours > 0) {
+                                document.getElementById("UptimeL").innerHTML = hours + " hours " + minutes + " minutes " + seconds + " seconds";
+                            } else if (minutes > 0) {
+                                document.getElementById("UptimeL").innerHTML = minutes + " minutes " + seconds + " seconds";
+                            } else {
+                                document.getElementById("UptimeL").innerHTML = seconds + " seconds";
+                            }
+                        }, 1000);
+                    </script>                   
+                </em>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- cool footer that has icons that links to different pages of mine -->
@@ -92,12 +126,16 @@
 
         </div>
 
+        <!-- make a div that shows the websites uptime. -->
+
+
         <p class="copyright">
             &copy; Copyright 2022 Zeeshan
         </p>
 
     </section>
     <script src="js/Nav.js"></script>
+
 
 </body>
 
