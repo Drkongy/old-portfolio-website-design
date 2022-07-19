@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: montserrat;
+    background-color: #202020;
+}
+
+nav {
+    background: #202020;
+    height: 80px;
+    width: 100%;
+    z-index: 20;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    z-index: 20;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    z-index: 20;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 20;
+}
+
+.ul a.active,
+.ul a:hover {
+    background: #fff;
+    transition: .5s;
+    color: #022f69;
+    z-index: 20;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+}
+
+img.icon {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    /* change the image size */
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    z-index: 20;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: lightgray;
+    margin: 4px;
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+#check {
+    display: none;
+    z-index: 20;
+}
+
+@media (max-width: 1200px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+        z-index: 20;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #202020;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .ul a:hover,
+    .ul a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    label.logo {
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    img.icon {
+        width: 45px;
+        height: 45px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    label.logo {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    img.icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+}
