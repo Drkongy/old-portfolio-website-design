@@ -259,3 +259,60 @@ h2 {
         margin: 0 15px;
     }
 }
+
+.btn {
+    background-color: #202020;
+    color: #202020;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn span {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #202020;
+    border: 1px solid #202020;
+}
+
+.btn:hover i {
+    color: #202020;
+    /* add a fade */
+    transition: 0.5s ease;
+}
+
+.btn:hover span {
+    color: #202020;
+    transition: 0.5s ease;
+}
