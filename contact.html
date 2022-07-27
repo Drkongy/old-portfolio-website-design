@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/contact.css">
+
     <link rel="icon" href="Images/Icon8.png">
 
 
@@ -58,22 +60,92 @@
     </div>
 
     <!-- small infomaiton about me -->
-    <main class="Main-Panel">
-        <h1>I'm Zeeshan</h1>
-        <blockquote class="myInfo">
-            Student & Software Engineer
+    <main class="Main">
+        <div class="items">
+            <div class="item">
+                <p><i class="fas fa-user-circle"></i>Zeeshan</p>
 
-        </blockquote>
+            </div>
+
+            <div class="item">
+                <p><i class="fas fa-map-marker-alt"></i>Birmingham, England</p>
+
+            </div>
+
+            <div class="item mail">
+                <p><i class="fas fa-envelope"></i>
+                    <a href="mailto:Zeeshan@Kongolian.tech">
+                        Zeeshan@Kongolian.tech
+                    </a>
+                </p>
+            </div>
+            <!-- <div class="item">
+                <p><i class="fas fa-phone-alt"></i>+92-3-55555555</p>
+            </div> -->
+            <div class="item">
+                <p><i class="fas fa-globe-asia"></i>
+                    <!-- open in new window -->
+                    <a href="http://kongolian.tech" target="_blank">
+                        kongolian.tech
+                    </a>
+                </p>
+            </div>
+
+
+            <div class="item">
+                <p><i class="fab fa-discord"></i>
+                    <a href="https://discord.gg/cYCsDfyPAv" target="_blank">
+                        Discord
+                    </a>
+                </p>
+            </div>
+
+            <div class="item">
+                <p><i class="fas fa-file-alt"></i>
+                    <a href="Privacy.html" target="_blank">Privacy Policy!</a>
+                </p>
+            </div>
+
+        </div>
+
+
+
+
 
     </main>
 
-    <!-- button linking to konglian hosting platform -->
-    <button class="btn">
-        <a href="http://kongolian.tech">
-            <i class="fas fa-arrow-right"></i>
-            <span>Kongolian</span>
-        </a>
-    </button>
+
+    <div class="uptime">
+        <i class="fas fa-server"></i>
+        <span>Uptime:</span>
+        <em>
+            <br>
+            <label id="UptimeL"></label>                    
+            <!-- on website load -->
+            <script>
+                setInterval(function() {
+                    var d = new Date();
+                    var days = d.getDay();
+                    var hours = d.getHours();
+                    var minutes = d.getMinutes();
+                    var seconds = d.getSeconds();
+
+                    // only show the days, hours, minutes if they are greater than 0 
+                    if (days > 0) {
+                        document.getElementById("UptimeL").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
+                    } else if (hours > 0) {
+                        document.getElementById("UptimeL").innerHTML = hours + " hours " + minutes + " minutes " + seconds + " seconds";
+                    } else if (minutes > 0) {
+                        document.getElementById("UptimeL").innerHTML = minutes + " minutes " + seconds + " seconds";
+                    } else {
+                        document.getElementById("UptimeL").innerHTML = seconds + " seconds";
+                    }
+                }, 1000);
+            </script>                   
+        </em>
+    </div>
+
+
 
 
     <div class="social">

@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    font: optional;
+    transition: 2s ease;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: relative;
+}
+
+
+/* this is for the navagation */
+
+.miniNav {
+    position: fixed;
+    width: 100%;
+    /* left: 50%; */
+    z-index: 1;
+    transition: 2s ease;
+    margin: 10px;
+}
+
+.miniNav-container {
+    /* make the items in rows */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.miniNav-item {
+    /* make the items in rows */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    /* background-color: #202020; */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s ease;
+    margin-left: 10px;
+}
+
+.miniNav-item a {
+    text-decoration: none;
+    color: #fff;
+    /* make items inline */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniNav-item i {
+    /* margin-right: 10px; */
+}
+
+.miniNav-item p {
+    margin-left: 10px;
+}
+
+.miniNav-item:hover {
+    background-color: #202020;
+}
+
+
+/* if the width is less than 500px */
+
+@media screen and (max-width: 850px) {
+    .miniNav-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .miniNav-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .miniNav-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .miniNav-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .miniNav p {
+        display: none;
+    }
+}
+
+
+/* This is for the Main Center Stuff*/
+
+.Main-Panel {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Main-Panel h1 {
+    text-align: center;
+    font-weight: Bold;
+    font-size: 40px;
+    color: white;
+}
+
+.Main-Panel .myInfo {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* This is for the text cr*/
+
+h2 {
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn {
+    background-color: #202020;
+    color: #202020;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn span {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #202020;
+    border: 1px solid #202020;
+}
+
+.btn:hover i {
+    color: #202020;
+    /* add a fade */
+    transition: 0.5s ease;
+}
+
+.btn:hover span {
+    color: #202020;
+    transition: 0.5s ease;
+}
+
+
+/* footer */
+
+.social {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.social i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social i:hover {
+    /* transition */
+    transition: 0.5s ease;
+    color: #000;
+    /* glow */
+    text-shadow: 0 0 20px #fff;
+}
+
+.copyright {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}

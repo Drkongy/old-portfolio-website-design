@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #161a46;
+    background-color: #202020;
     height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,9 +19,22 @@ body {
 }
 
 
-/* This is for the navigation*/
+/* gives a fancy scroll bar */
 
-nav {
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(61, 61, 61);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 2em;
+}
+
+
+/* this is for the navagation */
+
+.miniNav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,173 +45,108 @@ nav {
     font: optional;
     padding: 5px;
     top: 0;
+    background-color: #202020;
 }
 
-.Logo h4 {
-    float: left;
-    align-items: left;
-    padding: 3vh 6vh;
-    margin-top: 0%;
-    font-size: 250%;
-    color: white
-}
-
-.Nav-Links {
+.miniNav-container {
+    /* make the items in rows */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 40%;
+    margin: 0 auto;
 }
 
-.Nav-Links li {
-    list-style: none;
-}
-
-.Nav-Links a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: .5vh;
-    font-weight: bold;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: lightgray;
-    margin: 4px;
-    transition: all 0.3s ease;
-}
-
-.info {
-    margin-top: 50%;
-}
-
-
-/* This is for the Main Center Stuff*/
-
-.Main-Panel {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.Main-Panel h1 {
-    text-align: center;
-    font-weight: Bold;
-    font-size: 40px;
-    color: white;
-}
-
-.Main-Panel .myInfo {
-    text-align: center;
-    font-weight: normal;
+.miniNav-item {
+    /* make the items in rows */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
     font-size: 20px;
-    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s ease;
+    margin-left: 10px;
 }
 
-@media screen and (max-width: 800px) {
-    .Logo h4 {
-        position: center;
-        font-size: 200%;
-    }
-    .burger {
-        display: block;
-    }
-    .Nav-Links {
-        position: absolute;
-        right: 0px;
-        height: 100%;
-        top: 12vh;
-        background-color: rgb(65, 65, 65);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        padding-bottom: 200px;
-    }
-    .Nav-Links li {
-        opacity: 0;
-    }
-    body {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .info {
-        margin-top: 100%;
-    }
-    .Main-Panel h1 {
-        font-size: 30px;
-    }
-    .footer .social a {
-        font-size: 50px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+.miniNav-item a {
+    text-decoration: none;
+    color: #fff;
+    /* make items inline */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniNav-item p {
+    margin-left: 10px;
+}
+
+.miniNav-item:hover {
+    background-color: #202020;
+}
+
+
+/* if the width is less than 500px */
+
+@media screen and (max-width: 850px) {
+    .miniNav-container {
+        width: 60%;
+        margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 400px) {}
-
-::-webkit-scrollbar {
-    width: 10px;
-    background: #1c2266;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #202a97;
-    border-radius: 2em;
-}
-
-.nav-active {
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
+@media screen and (max-width: 700px) {
+    .miniNav-container {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
-.toggle .Line1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
+@media screen and (max-width: 600px) {
+    .miniNav-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
-.toggle .Line2 {
-    opacity: 0;
+@media screen and (max-width: 550px) {
+    .miniNav-container {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
-.toggle .Line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+@media screen and (max-width: 500px) {
+    .miniNav p {
+        display: none;
+    }
 }
+
+
+/*!------------------------------------ */
+
+
+/* main items */
 
 
 /* This is for the text cr*/
-
-h2 {
-    font-family: 'Acme', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-}
 
 h1 {
     text-align: center;
     font-weight: Bold;
     font-size: 40px;
     color: white;
+    text-shadow: 0 0 30px #fff;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
 }
 
 
@@ -226,57 +174,33 @@ a {
 }
 
 .Project {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 350px;
-    border-radius: 4px;
-    background-color: #161a46;
-    text-align: center;
-    margin: 20px;
-    transition: 0.3s;
+    width: 250px;
+    height: 300px;
     border: 1px solid #fff;
-    border-radius: 14px;
-    outline: none;
-    color: white;
-    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+    margin: 10px;
+    padding: 10px;
+    background-color: #505050;
 }
 
 .ImageArea {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border: 2px solid white;
     border-radius: 50%;
-    margin-bottom: 10px;
     padding: 20px;
     background-size: cover;
-    background-position: center center;
 }
 
-.Project:nth-child(1) .ImageArea {
-    background-image: url(../images/Icon2.png);
-}
-
-.Project:nth-child(2) .ImageArea {
-    background-image: url(../images/Icon1.png);
-}
-
-.Project:nth-child(3) .ImageArea {
-    background-image: url(../images/Icon3.png);
-}
-
-.header0text {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 48px;
+.header_text {
+    line-height: 20px;
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .ImageText {
@@ -289,25 +213,44 @@ a {
 .ImageText p {
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 20px;
     color: white;
     text-decoration: none;
     padding-bottom: 20px;
+    margin-top: 20px;
 }
 
-.Download {
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 2px solid white;
-    color: white;
-    background-color: royalblue;
+.Project {
+    transition: 0.5s ease;
 }
 
 .Project:hover {
-    box-shadow: 0 0 25px 0 #fff;
-    background-color: #202a97;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    box-shadow: 0 0 20px #fff;
 }
+
+.icon {
+    /* remove text decor */
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 1s ease;
+    /* make the icon at the botton of the div */
+}
+
+.icon:hover {
+    transition: 0.5s ease;
+    color: #202020;
+    text-shadow: 0 0 30px #fff;
+    /* increase in size */
+    transform: scale(1.1);
+}
+
+
+/* pads so it does not clip of the screen */
 
 .padder {
     padding-top: 200px;
@@ -317,8 +260,8 @@ a {
 /* This is for the Footer*/
 
 .footer {
-    padding: 10px 0;
-    background-color: #161a46;
+    /* padding: 10px 0; */
+    background-color: #202020;
     bottom: 0;
     width: 100%;
     position: fixed;
@@ -332,44 +275,21 @@ a {
 }
 
 .footer .social a {
-    font-size: 50px;
-    color: inherit;
-    width: 40px;
-    height: 40px;
-    line-height: 30px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 25px;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer .social a:hover {
     transition: 0.5s ease;
-    color: rgb(65, 65, 65);
+    color: #000;
+    text-shadow: 0 0 20px #fff;
 }
 
 .footer .copyright {
-    margin: top 15px;
     text-align: center;
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
-}
-
-@media screen and (max-width: 500px) {
-    .footer .social i {
-        font-size: 40px;
-        margin: 0 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .footer .social i {
-        font-size: 35px;
-        padding-left: 0;
-        margin: 100 100;
-    }
-    .footer .social a {
-        margin: 0 15px;
-    }
+    color: #fff;
+    background-color: #202020;
+    width: 100%;
 }

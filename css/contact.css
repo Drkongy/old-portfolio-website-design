@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+}
+
+.Main {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+}
+
+.Main a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Main i {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.item:hover {
+    text-shadow: 0 0 30px #fff;
+    transition: 0.5s ease;
+}
+
+
+/* when u leave the hover */
+
+.item:hover i {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.item:hover a {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.item:hover p {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+
+/* if the width is less than 500px */
+
+@media screen and (max-width: 600px) {
+    .item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mail p {
+        font-size: 20px;
+    }
+}
+
+.uptime {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.uptime:hover {
+    text-shadow: 0 0 30px #fff;
+    transition: 0.5s ease;
+}
+
+.uptime:hover i {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.uptime:hover span {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.uptime:hover label {
+    color: #000;
+    transition: 0.5s ease;
+}
